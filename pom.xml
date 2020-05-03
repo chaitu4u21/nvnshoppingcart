@@ -142,4 +142,16 @@
 		<finalName>nvnshoppingcart</finalName>
 	</build>
 	<artifactId>registration</artifactId>
+	<distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/shopping-rel/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://localhost:8081/repository/Shoppingcart/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
